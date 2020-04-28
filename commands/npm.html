@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;1,577&display=swap" rel="stylesheet">
+<title>NPM Commands</title>
+</head>
+
+<style>
+  body {
+    font-family: 'Muli', sans-serif;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+
+  .box {
+    border: 20px dotted white;
+    border-radius: 21px;
+    background: #f5f5f5;
+  }
+</style>
+
+<body>
+
+  <div class="container my-5">
+    <h1 class="display-4 text-center mb-3">Npm Basic Commands</h1>
+    <div class="row box justify-content-center rounded px-4 py-2 m-2">
+      <div>
+        <h4>NPM version</h4>
+        <h5 class="mx-4 text-primary">npm -v || npm --version</h5>
+        <h4>For help</h4>
+        <h5 class="mx-4 text-primary">npm || npm help</h5>
+        <h4>Creating package.json</h4>
+        <h5 class="mx-4 text-primary">npm init</h5>
+        <h4>Creating package.json with Default values</h4>
+        <h5 class="mx-4 text-primary">npm init --yes</h5>
+        <h4>Set default author</h4>
+        <h5 class="mx-4 text-primary">npm config set init-author-name "vishal ibitwar"</h5>
+        <h4>Set default License (while setting config is optional)</h4>
+        <h5 class="mx-4 text-primary">npm set init-license "MIT"</h5>
+        <h4>Check default values (here is author)</h4>
+        <h5 class="mx-4 text-primary">npm get init-author-name</h5>
+        <h4>Remove Default</h4>
+        <h5 class="mx-4 text-primary">npm config delete init-author-name</h5>
+        <h4>Install package and save as dependencies</h4>
+        <h5 class="mx-4 text-primary">npm install $package_name &nbsp; --save</h5>
+        <h4>Install package and save as dev-dependencies</h4>
+        <h5 class="mx-4 text-primary">npm install $package_name &nbsp; --save-dev</h5>
+        <h5 class="mx-4 text-primary">npm install -D $package_name</h5>
+        <h5 class="mx-4 text-primary">npm install --save-dev &nbsp; $package_name </h5>
+        <h4>Install all dependencies (Regular as well as Dev)</h4>
+        <h5 class="mx-4 text-primary">npm install</h5>
+        <h4>Install only Regular dependencies</h4>
+        <h5 class="mx-4 text-primary">npm install --production</h5>
+        <h4>UnInstall package (dev-dependencies || regular dependencies)</h4>
+        <h5 class="mx-4 text-primary">npm uninstall $package_name --save-dev</h5>
+        <h5 class="mx-4 text-primary">npm un $package_name --save</h5>
+        <h5 class="mx-4 text-primary">npm remove $package_name --save</h5>
+        <h5 class="mx-4 text-primary">npm rm $package_name --save-dev</h5>
+        <h4>Install particular version</h4>
+        <h5 class="mx-4 text-primary">npm install $package_name@version</h5>
+        <h5 class="mx-4 text-primary"> e.g. npm install loadash@4.17.3</h5>
+        <h4>Update package</h4>
+        <h5 class="mx-4 text-primary">npm update $package_name</h5>
+        <div class="bg-secondary container">
+          <h2 class="text-center text-white">About Versions</h2>
+          <h1 class="mx-4 text-primary text-center">4.3.6</h1>
+          <h5 class="mx-4 text-primary text-center"> <span class="badge badge-danger">Major Version</span> . <span
+              class="badge badge-warning">Minor Version(new features)</span> . <span class="badge badge-dark">Patch (bug
+              fixes)</span> </h5>
+          <pre class="text-light">
+              major version can break the application
+              minor version will not break the application
+              Patch version will fixes the bugs can't break the application
+                <h4 class="m-0 text-center" >4.3.6  will download the exact version</h4>           <h4 class="m-0 text-center" >^4.3.6  will download the latest minor version</h4>     <h4 class="m-0 text-center">~4.3.6  will download the latest patch version</h4>       <h4 class="m-0 text-center">* will download the absolute latest major version</h4>
+          </pre>
+        </div>
+
+        <h4>Install package Globally</h4>
+        <h5 class="mx-4 text-primary">npm install -g $package_name</h5>
+        <h4>To see where our global package installed</h4>
+        <h5 class="mx-4 text-primary">npm root -g</h5>
+        <h4>UnInstall globally installed package</h4>
+        <h5 class="mx-4 text-primary">npm remove -g $package_name </h5>
+        <h4>List the packages in the folder</h4>
+        <h5 class="mx-4 text-primary">npm list</h5>
+        <h4>List the package in the folder with depth-0</h4>
+        <h5 class="mx-4 text-primary"> npm list --depth 0 (you can change depth as you want)</h5>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

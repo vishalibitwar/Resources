@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;1,577&display=swap" rel="stylesheet">
+<title>GIT Commands</title>
+</head>
+
+<style>
+  body {
+    font-family: 'Muli', sans-serif;
+  }
+  .box {
+    border: 20px dotted white;
+    border-radius: 21px;
+    background: #f5f5f5;
+  }
+</style>
+
+<body>
+
+  <div class="container my-5">
+    <h1 class="display-4 text-center mb-3">Git Basic Commands</h1>
+
+    <div class="row box bg-light justify-content-center rounded px-4 py-2 m-2">
+      <div>
+        <h4>Create a new git Repository</h4>
+        <h5 class="mx-4 text-primary">git init</h5>
+        <h4>Adding files to Staging Area</h4>
+        <h5 class="mx-4 text-primary">git add .</h5>
+        <h4>Commiting files</h4>
+        <h5 class="mx-4 text-primary">git commit -m 'message'</h5>
+        <h4>Check Status</h4>
+        <h5 class="mx-4 text-primary">git status</h5>
+        <h4>View Commits</h4>
+        <h5 class="mx-4 text-primary">git log</h5>
+        <h4>Switching to previous commit</h4>
+        <h5 class="mx-4 text-primary">git checkout 881d3dd7913f(Commit no) </h5>
+        <h4>Switching to previous commit by creating a new branch</h4>
+        <h5 class="mx-4 text-primary">git checkout -b $Branch_Name 881d3dd7913f(Commit no) </h5>
+        <h4>show all branches</h4>
+        <h5 class="mx-4 text-primary">git branch</h5>
+        <h4>Creating a new branch</h4>
+        <h5 class="mx-4 text-primary">git branch $Branch_name</h5>
+        <h4>Switching to a branch</h4>
+        <h5 class="mx-4 text-primary">git checkout $Branch_name</h5>
+        <h4> Create and Switch to a branch</h4>
+        <h5 class="mx-4 text-primary">git checkout -b $Branch_name</h5>
+        <h4> Delete a branch</h4>
+        <h5 class="mx-4 text-primary">git branch -d $Branch_name</h5>
+        <h4> Merging branch(run this command from merge receving branch)</h4>
+        <h5 class="mx-4 text-primary">git merge $Branch_name</h5>
+        <h4>Activity</h4>
+        <h5 class="mx-4 text-primary">git reflog</h5>
+        <h4>Adding a remote</h4>
+        <h5 class="mx-4 text-primary">git remote add origin https://github.com/user/repo.git</h5>
+        <h4>Renaming Remote</h4>
+        <h5 class="mx-4 text-primary">$ git remote rename current_name new_name</h5>
+        <h4>Verfify new remote</h4>
+        <h5 class="mx-4 text-primary"> git remote -v</h5>
+        <h4>Push content to remote Repository</h4>
+        <h5 class="mx-4 text-primary"> git push $remote_name $Branch_Name</h5>
+        <p class="mx-4 text-warning">e.g. git push origin master</p>
+        <h4>push branch to remote</h4>
+        <h5 class="mx-4 text-primary"> git push $remote_name $Branch_Name</h5>
+        <h4>Deleting a remote Branch</h4>
+        <h5 class="mx-4 text-primary"> git push origin($remote_name) -d $Branch_Name</h5>
+        <h4>Fetching content from Remote Repository</h4>
+        <h5 class="mx-4 text-primary">git fetch $remote_name $Branch_Name</h5>
+        <h4>Check the remote and local branch is upto date or not</h4>
+        <h5 class="mx-4 text-primary">git checkout</h5>
+        <h4>Pull the content from Remote Repository</h4>
+        <h5 class="mx-4 text-primary">git pull $remote_name $Branch_Name</h5>
+        <p class="mx-4 text-warning">e.g. git pull origin master</p>
+
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
